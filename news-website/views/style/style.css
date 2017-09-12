@@ -1,0 +1,288 @@
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+.img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.wrapper {
+	position: relative;
+}
+
+/*Стили хидера*/
+.header {
+}
+
+.header .logo {
+	margin: 0 auto;
+}
+
+/*Стили меню в хидере*/
+.header .header_nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+	width: 80%;
+	margin: 55px 0 0 auto;
+	text-align: center;
+}
+
+.header .header_nav a {
+	background: rgba(125,111,235,1);
+	background: -moz-linear-gradient(top, rgba(125,111,235,1) 0%, rgba(72,34,179,1) 50%, rgba(72,34,179,1) 51%, rgba(125,111,235,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(125,111,235,1)), color-stop(50%, rgba(72,34,179,1)), color-stop(51%, rgba(72,34,179,1)), color-stop(100%, rgba(125,111,235,1)));
+	background: -webkit-linear-gradient(top, rgba(125,111,235,1) 0%, rgba(72,34,179,1) 50%, rgba(72,34,179,1) 51%, rgba(125,111,235,1) 100%);
+	background: -o-linear-gradient(top, rgba(125,111,235,1) 0%, rgba(72,34,179,1) 50%, rgba(72,34,179,1) 51%, rgba(125,111,235,1) 100%);
+	background: -ms-linear-gradient(top, rgba(125,111,235,1) 0%, rgba(72,34,179,1) 50%, rgba(72,34,179,1) 51%, rgba(125,111,235,1) 100%);
+	background: linear-gradient(to bottom, rgba(125,111,235,1) 0%, rgba(72,34,179,1) 50%, rgba(72,34,179,1) 51%, rgba(125,111,235,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d6feb', endColorstr='#7d6feb', GradientType=0 );
+	display: flex;
+	align-items: center;
+	align-content: space-around;
+	justify-content: space-around;
+	width: 300px;
+	height: 66px;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.header .header_nav a:first-child {
+	border-radius: 5px 0px 0px 5px;
+}
+
+
+.header .header_nav a:last-child {
+	border-radius: 0px 5px 5px 0px;
+}
+
+.header .header_nav a:hover {
+	background: #6a54d7;
+	color: #503ea5;
+	text-shadow: 1px 1px 0 #ccc;
+}
+
+/*Стили основного контента*/
+main {
+	padding: 0 0 20px;
+}
+.main.container {
+	background: rgba(242,246,248,1);
+	background: -moz-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(207,207,207,1) 17%, rgba(207,207,207,1) 20%, rgba(242,246,248,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242,246,248,1)), color-stop(17%, rgba(207,207,207,1)), color-stop(20%, rgba(207,207,207,1)), color-stop(100%, rgba(242,246,248,1)));
+	background: -webkit-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(207,207,207,1) 17%, rgba(207,207,207,1) 20%, rgba(242,246,248,1) 100%);
+	background: -o-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(207,207,207,1) 17%, rgba(207,207,207,1) 20%, rgba(242,246,248,1) 100%);
+	background: -ms-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(207,207,207,1) 17%, rgba(207,207,207,1) 20%, rgba(242,246,248,1) 100%);
+	background: linear-gradient(to right, rgba(242,246,248,1) 0%, rgba(207,207,207,1) 17%, rgba(207,207,207,1) 20%, rgba(242,246,248,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#f2f6f8', GradientType=1 );
+	border: 1px solid #000;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	height: auto;
+}
+
+.main h1 {
+	text-transform: uppercase;
+	margin-left: 30px;
+	text-shadow: 2px 2px 1px #fff;
+
+}
+
+.catalog {
+	padding: 0 10px;
+}
+
+.catalog > .row {
+	padding: 10px 0;
+}
+
+.catalog > .row:first-child {
+	padding-top: 0;
+}
+
+.main > .row:last-child {
+	padding-bottom: 0;
+}
+
+/*Стили для вывода каталога*/
+.main .news_item_image {
+	border: 2px solid #fff;
+	box-shadow: 2px 2px 2px #000;
+}
+
+.main .news_item_date {
+	text-align: right;
+	display: block;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.main .news_item_title {
+	font-weight: 700;
+	font-size: 1.5em;
+	margin: 0 0 10px;
+	text-shadow: 1px 1px 2px #fff;
+}
+
+.main .news_item_short_desc {
+	font-size: 1em;
+	line-height: 1.25;
+	margin: 0 0 10px;
+}
+
+.main .news_link {
+	display: inline-block;
+	padding: 5px 25px;
+	text-decoration: none;
+	color: #000;
+	background: #fff;
+	border: 1px solid #000;
+	box-shadow: 0px 1px 1px #000;
+}
+
+.main .news_link:hover {
+	outline: 2px solid #fff;
+	transition: 0.2s;
+}
+.main .news_link:active {
+	box-shadow: none;
+	outline:none;
+	transition: 0.2s;
+}
+
+.main .category_tag {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.main .category_tag a {
+	text-transform: uppercase;
+	font-size: 0.75em;
+	text-decoration: none;
+	padding: 6px 25px 4px;
+	background: #ddd;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #777;
+	color: #fff;
+	text-shadow: 1px 0 1px #777;	
+}
+
+.main .category_tag a:hover {
+	box-shadow: none;
+	text-shadow: 2px 0 2px #222;
+	transition: 0.2s;
+}
+
+.main .category_tag a:active {
+	border: 1px solid #777;	
+	text-shadow: 1px 0 1px #222;
+	transition: 0.2s;
+}
+
+/*Стили для пагинации*/
+.pages {
+	text-align: center;
+	padding: 5px 0 15px;
+}
+.pages form {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.pages input[type="submit"] {
+	background: none;
+	border: 2px solid #777;
+	outline: none;
+	border-radius: 50%;
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 1px 1px 1px #777;
+	cursor: pointer;
+}
+
+.pages input[type="submit"]:hover:not(.disabled) {
+	background: #fff;
+	color: #000;	
+	text-shadow: 1px 1px 2px #111;
+	transition: 0.2s;
+}
+
+.pages input[type="submit"]:active:not(.disabled) {
+	color: #fff;
+	text-shadow: 2px 2px 2px #000;
+	border: 2px solid #000;	
+}
+
+/*Стили для отображения 1ой новости*/
+
+.main .news_date {
+	text-align: right;
+	display: block;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+	padding: 0 15px 0 0; 
+}
+
+.main .news_title {
+	font-size: 3em;
+	text-align: center;
+	margin-top: 0;
+}
+
+.main .news_img {
+	margin: 0 -15px;
+}
+
+.main .short_desc {
+	display: block;
+	padding: 0 15px 15px;
+	font-size: 1.2em;
+	text-shadow: 1px 1px 1px #999;
+}
+
+.main .news_description {
+	padding: 10px 15px 15px;
+	text-indent: 2em;
+	text-align: justify;
+}
+
+.main .news_description:first-letter {
+	font-size: 2em;
+	line-height: 0.5;
+}
+
+/*Стили футтера*/
+.footer {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left:0;
+	top: 100%;
+	background: #000;
+	color: #fff;
+	padding: 0 0 30px 0;
+}
+.footer ul {
+	padding: 0 0 0 20px;
+}
+
+.footer .copyrights {
+	text-align: center;
+}
