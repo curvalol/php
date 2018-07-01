@@ -13,7 +13,7 @@
 *   getFullPeriiods()       - принимает секунды, возвращает полное количество лет, мес, дней, часов, минут, секунд в виде строки;
 *   betweenDates()       - принимает 2 даты в формате строки либо секундах и возвращает разницу между датами в формате строки;
 */
-class easyDate{
+class EasyDate{
   public $today;
   public $weekDay;
   public $month;

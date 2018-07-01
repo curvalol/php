@@ -1,0 +1,294 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+
+input {
+	font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: inherit;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+a:hover {
+	color: #259bea;
+	text-shadow: 1px 1px 1px #000;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+.img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+h1 {
+	text-transform: uppercase;
+	padding-left: 50px; 
+}
+
+.wrapper {
+	background: url('../img/background.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat; 
+	padding: 0 80px; 
+}
+
+.header,
+.footer {
+	background: rgba(0, 0, 0, 0.5);
+	padding: 20px 80px; 
+	margin-left: -80px;
+	margin-right: -80px;
+	color: #ccc;
+}
+
+main > .container {
+	text-shadow: 1px 1px 1px #fff;	
+}
+
+.footer {
+	padding-bottom: 50px; 
+}
+
+.seatBox {
+	display: none
+}
+.seatContainer .seat {
+	display: inline-block;
+	width: 35px;
+	height: 35px;          
+	padding: 8px 0 0 0;
+	background: #259bea;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.seatContainer .seat.checked {
+	background: #24ea77;
+	color: #fff;
+}
+
+.seatContainer .seat.disabled {
+	background: #f4f7f9;
+	color: #666;
+}
+
+.seatContainer .seat:not(.disabled):hover {
+	border-color: #666;
+	transition: 0.5s;
+}
+
+.disabled {
+	display: none;
+}
+
+.seatContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.rowDirection > .seatContainer {
+	flex-direction: row;
+	justify-content: center;
+	padding-left: 38px;
+}
+
+.seatRow {
+	display: flex;
+	justify-content: center;
+}
+
+.categoryName {
+	text-align: center;
+	text-transform: capitalize;
+	display: block;
+}
+
+.info,
+.authorization,
+.error {
+	background: #eee;
+	padding: 10px 15px;
+	border: 1px solid #259bea;
+	border-radius: 4px;
+}
+
+.info .infoTitle {
+	font-size: 1.25em;
+}
+
+input[type="submit"] {
+	background: none;
+	border: 1px solid #259bea;
+	border-radius: 4px;
+	color: inherit;
+	padding: 2px 15px;
+	outline: none;
+}
+
+input[type="submit"]:hover {
+	background: #eee;
+	color: #000;
+	transition: 0.5s;
+}
+
+.buyButton {
+	display: block;
+	width: 100%;
+	margin: 10px 0 20px;
+}
+
+.authorization {
+	color: #666;
+}
+.authorization .line {
+	padding: 0 10px 5px 0;
+	text-align: right;
+}
+.authorization .line:last-child {
+	padding: 5px 0 0;
+	text-align:center;
+}
+.authorization input[type="submit"] {
+	padding: 5px 35px;
+}
+.error {
+	display: inline-block;
+	margin: 0 0 10px;
+}
+
+.orderConfirm {
+	padding-right: 300px;
+	font-size: 1.1em;
+}
+
+.orderConfirm .error {
+	background: #ff422d;
+	color: #fff;
+	text-shadow: none;
+	border-color: #ce574a;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	margin: 7px 0 10px;
+}
+
+form label span,
+.orderConfirm label span {
+	display: inline-block;
+	width: 115px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+form label input[type="text"],
+form label input[type="password"] ,
+.orderConfirm label input[type="text"], 
+.orderConfirm label input[type="password"] {
+	width: 272px;
+}
+
+.cabMenu {
+	font-size: 0;
+	padding: 0 0 15px 0;
+}
+
+.cabMenu .tab_button {
+	display: inline-block;
+	font-size: 20px;
+	background: rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
+	padding: 2px 15px;
+	border-right: 1px solid #000;
+}
+
+.cabMenu .tab_button.active {
+	background: #259bea;
+	color: #fff;
+	text-shadow: none;
+	box-shadow: 1px 1px 0 #000;
+}
+
+.cabMenu .tab_button:first-child {
+	border-radius: 4px 0 0 4px;
+}
+.cabMenu .tab_button:last-child {
+	border-radius: 0 4px 4px 0;
+	border-right: none;
+}
+
+.userTickets, 
+.userInformation {
+	padding: 0 0 0 75px;
+}
+
+.userTickets input[type="submit"], 
+.userInformation input[type="submit"] {
+	padding: 5px 50px;
+	margin-left: 50px;
+}
+
+.userTickets table {
+	display: block;
+	padding: 10px 0;
+}
+
+.userTickets tr {
+	border-bottom: 1px solid #259bea;
+}
+
+.userTickets tr * {
+	padding: 4px 15px;
+	text-align: center;
+}
+
+.userInformation label span {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	padding: 0 5px 0 0;
+}
+
+.userInformation label input[type="text"] {
+	width: 200px;
+}
+
+.userInformation input[type="submit"] {
+	margin: 7px 0 0;
+}
+
+.registerForm {
+	padding: 0 0 0 50px;
+}
+
+.registerForm input[type="submit"] {
+	padding: 2px 100px; 
+	margin: 5px 0 0 75px;
+}
+
+.oops {
+	display: inline-block;
+	margin-left: 250px;
+}
+
+div.cbalink {
+	display: none;
+}
